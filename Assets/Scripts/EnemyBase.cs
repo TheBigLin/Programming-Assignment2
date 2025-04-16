@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class EnemyBase : MonoBehaviour
 {
-    protected float health = 1.0f;
+    protected float health = 5.0f;
+   
 
     public abstract void TakeDamage(float damage);
 
