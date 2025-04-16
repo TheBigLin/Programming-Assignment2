@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 3.0f;
     private Transform player;
 
     void Start()

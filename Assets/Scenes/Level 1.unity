@@ -4987,10 +4987,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5175107712042731030, guid: 3779522c64207c5468eac2d28a20da85, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8032114830413424819, guid: 3779522c64207c5468eac2d28a20da85, type: 3}
       propertyPath: m_Name
       value: Shooting enemy
