@@ -13,7 +13,7 @@ public class SceneSwitch : MonoBehaviour
         {
             //if (totalKills >= killLimit)
             //{
-                SceneManager.LoadScene(+1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
            // }
         }
     }
