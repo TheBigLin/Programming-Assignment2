@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: -1840585235084443167}
   - component: {fileID: 864791450093062078}
   - component: {fileID: 5197832405691120515}
-  - component: {fileID: 355076773680967472}
   m_Layer: 0
   m_Name: basic enemy
   m_TagString: Enemy
@@ -222,19 +221,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &355076773680967472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7991983985710817591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038b39356e83e684ab5382866de9b406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8333954416989919901, guid: 6da9a77a3a0af784cb628630b9d795e9, type: 3}
-  firePoint: {fileID: 8593689734573837823}
-  shootingRange: 5
-  fireRate: 1

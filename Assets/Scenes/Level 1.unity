@@ -2523,8 +2523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f2590b74845f44489e8636692d0f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
-  currentHealth: 1
+  startingHealth: 3
+  currentHealth: 3
   Player: {fileID: 1083813583}
   mainMenuSceneName: MainMenu
 --- !u!1 &1089224885
