@@ -432,6 +432,7 @@ Transform:
   - {fileID: 594157815}
   - {fileID: 1464258687}
   - {fileID: 1301672802}
+  - {fileID: 1651143903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &69181715
@@ -4019,7 +4020,7 @@ RectTransform:
   m_Children:
   - {fileID: 1497973838}
   - {fileID: 396220084}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 69181714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4562,6 +4563,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &2018808331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018808332}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018808332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018808331}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0.08, z: 2.978725}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 594157815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028723565
 GameObject:
   m_ObjectHideFlags: 0
@@ -4696,9 +4728,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2641608890026945032, guid: 21f04fd661b8bea46941698aa8ad24f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2018808332}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3550559759145999492, guid: 21f04fd661b8bea46941698aa8ad24f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204188881023870834}
   m_SourcePrefab: {fileID: 100100000, guid: 21f04fd661b8bea46941698aa8ad24f8, type: 3}
+--- !u!1 &204188881023870833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550559759145999492, guid: 21f04fd661b8bea46941698aa8ad24f8, type: 3}
+  m_PrefabInstance: {fileID: 204188881023870832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &204188881023870834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204188881023870833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038b39356e83e684ab5382866de9b406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7763689785334236730, guid: eb4696658c537eb4caf3543749225ed7, type: 3}
+  firePoint: {fileID: 2018808332}
+  shootingRange: 5
+  fireRate: 3
 --- !u!1001 &1255663903064450961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5065,4 +5124,3 @@ SceneRoots:
   - {fileID: 745301093}
   - {fileID: 1083813586}
   - {fileID: 69181714}
-  - {fileID: 1651143903}
