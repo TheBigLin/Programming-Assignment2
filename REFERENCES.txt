@@ -1,3 +1,4 @@
 Pandemonium. (2021, May 29). Unity 2D Platformer for complete beginners - #7 HEALTH SYSTEM [Video]. YouTube. https://www.youtube.com/watch?v=yxzg8jswZ8A
 Technologies, U. (n.d.). Unity - Scripting API: SceneManagement.SceneManager.LoadScene. https://docs.unity3d.com/6000.0/Documentation/ScriptReference/SceneManagement.SceneManager.LoadScene.html
 How to change the scene in Unity after all enemies have been killed? (n.d.). Game Development Stack Exchange. https://gamedev.stackexchange.com/questions/151543/how-to-change-the-scene-in-unity-after-all-enemies-have-been-killed
+BMo. (2022, April 16). How to DAMAGE enemies in unity [Video]. YouTube. https://www.youtube.com/watch?v=anHxFtiVuiE
