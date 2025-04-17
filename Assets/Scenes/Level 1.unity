@@ -2972,7 +2972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7109a2aae9cf9c448fa119e4facef7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killLimit: 10
+  killLimit: 3
   totalKills: 0
 --- !u!1 &1564689269
 GameObject:
