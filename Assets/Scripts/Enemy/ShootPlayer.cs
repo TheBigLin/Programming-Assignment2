@@ -21,7 +21,7 @@ public class ShootPlayer : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.position); // checks how far away player is
         fireTimer += Time.deltaTime;
 
-        if (distance <= shootingRange && fireTimer >= 1f / fireRate)
+        if (distance <= shootingRange && fireTimer >= 1f / fireRate) // if player is within the shooting range, and is able to shoot, then use the shoot() function
         {
             Shoot();
             fireTimer = 0f;

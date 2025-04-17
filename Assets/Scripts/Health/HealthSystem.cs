@@ -1,35 +1,47 @@
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float currentHealth;
-    [SerializeField] public GameObject Player;
-
+    [SerializeField] private GameObject Player;
+    [SerializeField] private string mainMenuSceneName = "MainMenu";
     private void Awake()
     {
         currentHealth = startingHealth;
     }
 
+
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
+
         if (currentHealth <= 0)
         {
-            GameObject.Destroy(Player);
-         
+            Die();
         }
     }
 
+    // Method to handle death
+    private void Die()
+    {
+
+        Destroy(Player);
+
+
+        SceneManager.LoadScene(mainMenuSceneName);
+    }
+
+    // Collision detection
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+
+        if (collision.CompareTag("Enemy"))
         {
-            TakeDamage(1);
+            TakeDamage(1f);
         }
     }
-
-
 }
+
