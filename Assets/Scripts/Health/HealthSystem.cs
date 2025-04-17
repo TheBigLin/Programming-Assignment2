@@ -42,6 +42,11 @@ public class HealthSystem : MonoBehaviour
         {
             TakeDamage(1f);
         }
+
+        if (collision.CompareTag("EnemyBullet"))
+        {
+            TakeDamage(1f);
+        }
     }
 }
 
