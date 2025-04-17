@@ -33,5 +33,6 @@ public class ShootPlayer : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Vector2 direction = (player.position - firePoint.position).normalized;
         bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f; // 10 is bullet speed
+        GameObject.Destroy(bullet, 1.0f);
     }
 }
